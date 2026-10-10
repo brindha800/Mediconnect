@@ -1,128 +1,117 @@
 {
-    "name": "@types/react-dom",
-    "version": "19.2.7",
-    "description": "TypeScript definitions for react-dom",
-    "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react-dom",
-    "license": "MIT",
-    "contributors": [
-        {
-            "name": "Asana",
-            "url": "https://asana.com"
-        },
-        {
-            "name": "AssureSign",
-            "url": "http://www.assuresign.com"
-        },
-        {
-            "name": "Microsoft",
-            "url": "https://microsoft.com"
-        },
-        {
-            "name": "MartynasZilinskas",
-            "githubUsername": "MartynasZilinskas",
-            "url": "https://github.com/MartynasZilinskas"
-        },
-        {
-            "name": "Josh Rutherford",
-            "githubUsername": "theruther4d",
-            "url": "https://github.com/theruther4d"
-        },
-        {
-            "name": "Jessica Franco",
-            "githubUsername": "Jessidhia",
-            "url": "https://github.com/Jessidhia"
-        },
-        {
-            "name": "Sebastian Silbermann",
-            "githubUsername": "eps1lon",
-            "url": "https://github.com/eps1lon"
-        }
-    ],
-    "main": "",
-    "types": "index.d.ts",
-    "exports": {
-        ".": {
-            "types": {
-                "default": "./index.d.ts"
-            }
-        },
-        "./client": {
-            "types": {
-                "default": "./client.d.ts"
-            }
-        },
-        "./canary": {
-            "types": {
-                "default": "./canary.d.ts"
-            }
-        },
-        "./server": {
-            "types": {
-                "default": "./server.d.ts"
-            }
-        },
-        "./server.browser": {
-            "types": {
-                "default": "./server.browser.d.ts"
-            }
-        },
-        "./server.bun": {
-            "types": {
-                "default": "./server.bun.d.ts"
-            }
-        },
-        "./server.edge": {
-            "types": {
-                "default": "./server.edge.d.ts"
-            }
-        },
-        "./server.node": {
-            "types": {
-                "default": "./server.node.d.ts"
-            }
-        },
-        "./static": {
-            "types": {
-                "default": "./static.d.ts"
-            }
-        },
-        "./static.browser": {
-            "types": {
-                "default": "./static.browser.d.ts"
-            }
-        },
-        "./static.edge": {
-            "types": {
-                "default": "./static.edge.d.ts"
-            }
-        },
-        "./static.node": {
-            "types": {
-                "default": "./static.node.d.ts"
-            }
-        },
-        "./experimental": {
-            "types": {
-                "default": "./experimental.d.ts"
-            }
-        },
-        "./test-utils": {
-            "types": {
-                "default": "./test-utils/index.d.ts"
-            }
-        },
-        "./package.json": "./package.json"
+  "name": "react-dom",
+  "version": "19.2.8",
+  "description": "React package for working with the DOM.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/react/react.git",
+    "directory": "packages/react-dom"
+  },
+  "keywords": [
+    "react"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/react/react/issues"
+  },
+  "homepage": "https://react.dev/",
+  "dependencies": {
+    "scheduler": "^0.27.0"
+  },
+  "peerDependencies": {
+    "react": "^19.2.8"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "client.js",
+    "client.react-server.js",
+    "index.js",
+    "profiling.js",
+    "profiling.react-server.js",
+    "react-dom.react-server.js",
+    "server.browser.js",
+    "server.bun.js",
+    "server.edge.js",
+    "server.js",
+    "server.node.js",
+    "server.react-server.js",
+    "static.browser.js",
+    "static.edge.js",
+    "static.js",
+    "static.node.js",
+    "static.react-server.js",
+    "test-utils.js",
+    "cjs/"
+  ],
+  "exports": {
+    ".": {
+      "react-server": "./react-dom.react-server.js",
+      "default": "./index.js"
     },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
-        "directory": "types/react-dom"
+    "./client": {
+      "react-server": "./client.react-server.js",
+      "default": "./client.js"
     },
-    "scripts": {},
-    "dependencies": {},
-    "peerDependencies": {
-        "@types/react": "^19.2.0"
+    "./server": {
+      "react-server": "./server.react-server.js",
+      "workerd": "./server.edge.js",
+      "bun": "./server.bun.js",
+      "deno": "./server.browser.js",
+      "worker": "./server.browser.js",
+      "node": "./server.node.js",
+      "edge-light": "./server.edge.js",
+      "browser": "./server.browser.js",
+      "default": "./server.node.js"
     },
-    "typesPublisherContentHash": "a98500afa682f848998ff6e625f9efb4d5df0477f2255ba4ad8673005a9aba65",
-    "typeScriptVersion": "5.6"
+    "./server.browser": {
+      "react-server": "./server.react-server.js",
+      "default": "./server.browser.js"
+    },
+    "./server.bun": {
+      "react-server": "./server.react-server.js",
+      "default": "./server.bun.js"
+    },
+    "./server.edge": {
+      "react-server": "./server.react-server.js",
+      "default": "./server.edge.js"
+    },
+    "./server.node": {
+      "react-server": "./server.react-server.js",
+      "default": "./server.node.js"
+    },
+    "./static": {
+      "react-server": "./static.react-server.js",
+      "workerd": "./static.edge.js",
+      "deno": "./static.browser.js",
+      "worker": "./static.browser.js",
+      "node": "./static.node.js",
+      "edge-light": "./static.edge.js",
+      "browser": "./static.browser.js",
+      "default": "./static.node.js"
+    },
+    "./static.browser": {
+      "react-server": "./static.react-server.js",
+      "default": "./static.browser.js"
+    },
+    "./static.edge": {
+      "react-server": "./static.react-server.js",
+      "default": "./static.edge.js"
+    },
+    "./static.node": {
+      "react-server": "./static.react-server.js",
+      "default": "./static.node.js"
+    },
+    "./profiling": {
+      "react-server": "./profiling.react-server.js",
+      "default": "./profiling.js"
+    },
+    "./test-utils": "./test-utils.js",
+    "./package.json": "./package.json"
+  },
+  "browser": {
+    "./server.js": "./server.browser.js",
+    "./static.js": "./static.browser.js"
+  }
 }

@@ -1,16 +1,60 @@
-# Installation
-> `npm install --save @types/react-dom`
+# `react-dom`
 
-# Summary
-This package contains type definitions for react-dom (https://react.dev/).
+This package serves as the entry point to the DOM and server renderers for React. It is intended to be paired with the generic React package, which is shipped as `react` to npm.
 
-# Details
-Files were exported from https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react-dom.
+## Installation
 
-### Additional Details
- * Last updated: Thu, 03 Sep 2026 11:03:52 GMT
- * Dependencies: none
- * Peer dependencies: [@types/react](https://npmjs.com/package/@types/react)
+```sh
+npm install react react-dom
+```
 
-# Credits
-These definitions were written by [Asana](https://asana.com), [AssureSign](http://www.assuresign.com), [Microsoft](https://microsoft.com), [MartynasZilinskas](https://github.com/MartynasZilinskas), [Josh Rutherford](https://github.com/theruther4d), [Jessica Franco](https://github.com/Jessidhia), and [Sebastian Silbermann](https://github.com/eps1lon).
+## Usage
+
+### In the browser
+
+```js
+import { createRoot } from 'react-dom/client';
+
+function App() {
+  return <div>Hello World</div>;
+}
+
+const root = createRoot(document.getElementById('root'));
+root.render(<App />);
+```
+
+### On the server
+
+```js
+import { renderToPipeableStream } from 'react-dom/server';
+
+function App() {
+  return <div>Hello World</div>;
+}
+
+function handleRequest(res) {
+  // ... in your server handler ...
+  const stream = renderToPipeableStream(<App />, {
+    onShellReady() {
+      res.statusCode = 200;
+      res.setHeader('Content-type', 'text/html');
+      stream.pipe(res);
+    },
+    // ...
+  });
+}
+```
+
+## API
+
+### `react-dom`
+
+See https://react.dev/reference/react-dom
+
+### `react-dom/client`
+
+See https://react.dev/reference/react-dom/client
+
+### `react-dom/server`
+
+See https://react.dev/reference/react-dom/server
