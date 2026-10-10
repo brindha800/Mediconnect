@@ -1,0 +1,967 @@
+/* =========================================================
+   MEDICONNECT
+   Main Global CSS
+   ========================================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  background: #f6f8fc;
+  color: #1e293b;
+  line-height: 1.5;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+/* =========================================================
+   HOME NAVBAR
+   ========================================================= */
+
+.navbar {
+  height: 72px;
+  padding: 0 7%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e8edf5;
+}
+
+.logo {
+  font-size: 23px;
+  font-weight: 700;
+  color: #2563eb;
+  letter-spacing: -0.3px;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-buttons button {
+  border: none;
+  background: transparent;
+  color: #334155;
+  padding: 10px 17px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.nav-buttons button:hover {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+/* =========================================================
+   HOME HERO
+   ========================================================= */
+
+.home {
+  min-height: 100vh;
+  background: #f6f8fc;
+}
+
+.hero {
+  min-height: 530px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 70px 25px;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 850px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -1px;
+  color: #172033;
+  margin-bottom: 22px;
+}
+
+.hero h1 span {
+  color: #2563eb;
+}
+
+.hero p {
+  max-width: 680px;
+  margin: 0 auto 30px;
+  color: #64748b;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+.primary-btn {
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.primary-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+.secondary-btn {
+  background: white;
+  color: #2563eb;
+  border: 1px solid #2563eb;
+  padding: 11px 22px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.secondary-btn:hover {
+  background: #eff6ff;
+}
+
+/* =========================================================
+   HOME FEATURES
+   ========================================================= */
+
+.features {
+  background: #ffffff;
+  padding: 65px 7%;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 30px;
+  color: #172033;
+  margin-bottom: 38px;
+}
+
+.feature-container {
+  max-width: 1150px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.feature-card {
+  background: #ffffff;
+  border: 1px solid #e5eaf2;
+  border-radius: 12px;
+  padding: 28px 20px;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.feature-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.07);
+}
+
+.feature-card .icon {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  font-size: 17px;
+  margin-bottom: 9px;
+  color: #1e293b;
+}
+
+.feature-card p {
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* =========================================================
+   LOGIN / REGISTER
+   ========================================================= */
+
+.login-page {
+  min-height: 100vh;
+  background: #f6f8fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 35px 20px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 450px;
+  background: white;
+  padding: 36px;
+  border-radius: 14px;
+  border: 1px solid #e5eaf2;
+  box-shadow: 0 10px 35px rgba(15, 23, 42, 0.08);
+}
+
+.login-icon {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.login-card h1 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: #172033;
+  margin-bottom: 7px;
+}
+
+.login-subtitle {
+  text-align: center;
+  color: #64748b;
+  font-size: 14px;
+  margin-bottom: 26px;
+}
+
+.login-card label {
+  display: block;
+  margin: 15px 0 7px;
+  color: #334155;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.login-card input,
+.login-card select {
+  width: 100%;
+  height: 44px;
+  padding: 0 13px;
+  border: 1px solid #d5dce7;
+  border-radius: 8px;
+  outline: none;
+  background: #ffffff;
+  color: #1e293b;
+  font-size: 14px;
+}
+
+.login-card input:focus,
+.login-card select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.08);
+}
+
+.login-btn {
+  width: 100%;
+  height: 45px;
+  margin-top: 22px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.login-btn:hover {
+  background: #1d4ed8;
+}
+
+.register-text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.register-text span {
+  color: #2563eb;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.back-btn {
+  display: block;
+  margin: 20px auto 0;
+  border: none;
+  background: transparent;
+  color: #2563eb;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* =========================================================
+   DASHBOARD NAVBAR
+   ========================================================= */
+
+.dashboard-page {
+  min-height: 100vh;
+  background: #f6f8fc;
+}
+
+.dashboard-navbar {
+  height: 70px;
+  padding: 0 6%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e5eaf2;
+}
+
+.dashboard-logo {
+  font-size: 21px;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+.logout-btn {
+  border: 1px solid #dbe2ec;
+  background: white;
+  color: #334155;
+  padding: 9px 17px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.logout-btn:hover {
+  background: #f8fafc;
+}
+
+/* =========================================================
+   DASHBOARD
+   ========================================================= */
+
+.dashboard-content {
+  max-width: 1150px;
+  margin: auto;
+  padding: 45px 25px;
+}
+
+.welcome-section {
+  margin-bottom: 28px;
+}
+
+.welcome-section h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #172033;
+  margin-bottom: 7px;
+}
+
+.welcome-section p {
+  color: #64748b;
+  font-size: 15px;
+}
+
+.ask-card {
+  background: white;
+  border: 1px solid #e5eaf2;
+  border-radius: 13px;
+  padding: 28px;
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.04);
+}
+
+.ask-icon {
+  font-size: 42px;
+  line-height: 1;
+}
+
+.ask-card h2 {
+  font-size: 21px;
+  margin-bottom: 7px;
+}
+
+.ask-card p {
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 17px;
+}
+
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.dashboard-card {
+  background: white;
+  border: 1px solid #e5eaf2;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.card-icon {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.dashboard-card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.dashboard-card p {
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 17px;
+}
+
+.card-btn,
+.view-doctor-btn {
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 10px 17px;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.card-btn:hover,
+.view-doctor-btn:hover {
+  background: #1d4ed8;
+}
+
+/* =========================================================
+   SAFETY NOTICE
+   ========================================================= */
+
+.safety-notice {
+  margin-top: 28px;
+  padding: 17px 20px;
+  background: #fff8eb;
+  border: 1px solid #f6dca8;
+  border-radius: 9px;
+  color: #92400e;
+}
+
+.safety-notice strong {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.safety-notice p {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* =========================================================
+   SPECIALISTS
+   ========================================================= */
+
+.specialist-page {
+  max-width: 1100px;
+  margin: auto;
+  padding: 42px 25px;
+}
+
+.specialist-header {
+  margin-bottom: 25px;
+}
+
+.specialist-header h1 {
+  font-size: 31px;
+  font-weight: 700;
+  color: #172033;
+  margin-bottom: 7px;
+}
+
+.specialist-header p {
+  color: #64748b;
+  font-size: 15px;
+}
+
+.specialist-search {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.specialist-search input,
+.specialist-search select {
+  height: 44px;
+  border: 1px solid #d5dce7;
+  border-radius: 8px;
+  background: white;
+  padding: 0 13px;
+  font-size: 14px;
+  color: #334155;
+  outline: none;
+}
+
+.specialist-search input {
+  flex: 1;
+}
+
+.specialist-search input:focus,
+.specialist-search select:focus {
+  border-color: #2563eb;
+}
+
+/* =========================================================
+   DOCTOR CARDS
+   ========================================================= */
+
+.doctor-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.doctor-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: left;
+  box-shadow: 0 3px 14px rgba(15, 23, 42, 0.04);
+}
+
+.doctor-card h2 {
+  color: #172033;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 7px;
+}
+
+.doctor-card p {
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 5px 0;
+}
+
+.doctor-card button {
+  margin-top: 14px;
+}
+
+/* =========================================================
+   DOCTOR PROFILE
+   ========================================================= */
+
+.doctor-profile-card {
+  max-width: 760px;
+  margin: 15px auto 25px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 35px;
+  box-shadow: 0 5px 20px rgba(15, 23, 42, 0.05);
+}
+
+.doctor-profile-card h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: #172033;
+  margin-bottom: 15px;
+}
+
+.doctor-profile-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 25px;
+}
+
+.profile-info-item {
+  background: #f8fafc;
+  border: 1px solid #e5eaf2;
+  border-radius: 9px;
+  padding: 17px;
+  text-align: left;
+}
+
+.profile-info-item strong {
+  display: block;
+  color: #334155;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.profile-info-item p {
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* =========================================================
+   STATUS
+   ========================================================= */
+
+.status {
+  display: inline-block;
+  padding: 6px 11px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.status.waiting {
+  background: #fff7d6;
+  color: #92400e;
+}
+
+.status.answered {
+  background: #e8f8ed;
+  color: #166534;
+}
+
+/* =========================================================
+   MY QUESTIONS / RESPONSES
+   ========================================================= */
+
+.responses-page {
+  max-width: 1000px;
+  margin: auto;
+  padding: 42px 25px;
+}
+
+.responses-header {
+  margin-bottom: 25px;
+}
+
+.responses-header h1 {
+  font-size: 31px;
+  font-weight: 700;
+  color: #172033;
+  margin-bottom: 7px;
+}
+
+.responses-header p {
+  color: #64748b;
+  font-size: 15px;
+}
+
+.response-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.response-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 25px;
+  text-align: left;
+}
+
+.response-card h2 {
+  color: #172033;
+  font-size: 19px;
+  line-height: 1.45;
+  margin-bottom: 8px;
+}
+
+.response-card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.response-card p {
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.response-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.response-specialty {
+  color: #2563eb !important;
+  font-size: 13px !important;
+  font-weight: 600;
+}
+
+.response-time {
+  white-space: nowrap;
+  font-size: 13px;
+  color: #64748b;
+}
+
+.question-status-row {
+  margin: 15px 0;
+}
+
+/* =========================================================
+   DOCTOR DASHBOARD
+   ========================================================= */
+
+.doctor-dashboard {
+  max-width: 1150px;
+  margin: auto;
+  padding: 42px 25px;
+}
+
+.doctor-dashboard h1 {
+  font-size: 31px;
+  color: #172033;
+  margin-bottom: 7px;
+}
+
+.doctor-dashboard > p {
+  color: #64748b;
+  margin-bottom: 28px;
+}
+
+.doctor-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 11px;
+  padding: 21px;
+}
+
+.stat-card h3 {
+  font-size: 14px;
+  color: #64748b;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.stat-card strong {
+  font-size: 27px;
+  color: #172033;
+}
+
+.question-list {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+/* =========================================================
+   QUESTION DETAILS / DOCTOR ANSWER
+   ========================================================= */
+
+.question-details-page {
+  max-width: 950px;
+  margin: auto;
+  padding: 42px 25px;
+}
+
+.question-details-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 13px;
+  padding: 30px;
+  text-align: left;
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.04);
+}
+
+.question-details-card h1 {
+  color: #172033;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.question-details-card h2 {
+  color: #1e293b;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.patient-question-box {
+  background: #f8fafc;
+  border: 1px solid #e5eaf2;
+  border-radius: 10px;
+  padding: 21px;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.patient-question-box p {
+  color: #475569;
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.doctor-response-form {
+  margin-top: 25px;
+}
+
+.doctor-response-form label {
+  display: block;
+  color: #334155;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.doctor-response-form textarea {
+  display: block;
+  width: 100%;
+  min-height: 190px;
+  padding: 14px;
+  border: 1px solid #d5dce7;
+  border-radius: 9px;
+  outline: none;
+  resize: vertical;
+  background: white;
+  color: #1e293b;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.doctor-response-form textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.08);
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .feature-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dashboard-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .doctor-list {
+    grid-template-columns: 1fr;
+  }
+
+  .doctor-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .nav-buttons {
+    gap: 3px;
+  }
+
+  .nav-buttons button {
+    padding: 8px;
+  }
+
+  .hero {
+    padding: 50px 20px;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .hero-buttons button {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .feature-container {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-navbar {
+    padding: 0 20px;
+  }
+
+  .dashboard-content {
+    padding: 30px 18px;
+  }
+
+  .dashboard-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .ask-card {
+    flex-direction: column;
+  }
+
+  .doctor-profile-info {
+    grid-template-columns: 1fr;
+  }
+
+  .doctor-profile-card {
+    padding: 25px 20px;
+  }
+
+  .specialist-search {
+    flex-direction: column;
+  }
+
+  .response-top {
+    flex-direction: column;
+  }
+
+  .doctor-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .question-details-card {
+    padding: 22px 18px;
+  }
+}
