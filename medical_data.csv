@@ -1,0 +1,16 @@
+fever,cough,breathing_difficulty,chest_pain,headache,vomiting,skin_rash,itching,severity,risk_level,specialty
+1,1,0,0,0,0,0,0,2,Low,General Physician
+1,1,1,0,0,0,0,0,3,Moderate,Pulmonologist
+1,0,1,1,0,0,0,0,5,Emergency,Cardiologist
+0,0,1,1,0,0,0,0,5,Emergency,Cardiologist
+0,0,0,0,1,0,0,0,2,Low,Neurologist
+0,0,0,0,1,1,0,0,3,Moderate,General Physician
+0,0,0,0,0,0,1,1,2,Low,Dermatologist
+0,0,0,0,0,0,1,0,2,Low,Dermatologist
+1,1,1,0,0,1,0,0,4,High,General Physician
+0,0,1,1,0,1,0,0,5,Emergency,Cardiologist
+0,0,0,0,1,0,0,0,1,Low,Neurologist
+1,1,0,0,1,0,0,0,2,Moderate,General Physician
+0,0,0,0,0,0,1,1,3,Low,Dermatologist
+1,0,1,0,0,0,0,0,3,Moderate,Pulmonologist
+0,0,1,1,0,0,0,0,5,Emergency,Cardiologist
