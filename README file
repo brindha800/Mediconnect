@@ -1,0 +1,31 @@
+# MediConnect
+
+MediConnect is an AI-powered healthcare platform that analyzes patient symptoms, connects them with suitable medical specialists, and helps locate nearby clinics for urgent care.
+
+## Features
+- Patient registration and login
+- Symptom submission and analysis
+- Medical specialist recommendations
+- Doctor-patient communication
+- Nearby clinic information for urgent cases
+
+## Technology Stack
+- Frontend: React and Vite
+- Backend: Python
+- Database and Authentication: Firebase
+- AI/ML: Symptom analysis and risk prediction
+
+## Installation and Setup
+1. Clone or download this repository.
+2. Install the frontend dependencies using `npm install`.
+3. Configure the required Firebase credentials and environment variables.
+4. Start the frontend using `npm run dev`.
+5. Follow the instructions in the AI backend folder to install Python dependencies and run the backend.
+
+## Future Enhancements
+- Improve symptom analysis accuracy.
+- Expand specialist recommendations.
+- Enhance emergency clinic location services.
+
+## Disclaimer
+MediConnect is a project for healthcare assistance and is not a substitute for professional medical diagnosis or emergency services.
